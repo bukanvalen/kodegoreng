@@ -14,7 +14,7 @@ void menara(int n, char pasak1, char pasak2, char pasak3)
 int main()
 {
     int n;
-    printf("Masukkan banyak balok n : ");
+    printf("Masukkan banyak balok: ");
     scanf("%d", &n);
     menara(n, 'A', 'B', 'C');
 }
