@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 int MAKS;
+int awal[500000], i, data[500000], pilih;
 
 void insertion_data(int data[], int pilih)
 {
@@ -289,7 +290,6 @@ int main()
   scanf("%d", &MAKS);
 
   clock_t waktu;
-  int awal[MAKS], i, data[MAKS], pilih;
   char lagi = 'y';
 
   for (i = 0; i < MAKS; i++)
