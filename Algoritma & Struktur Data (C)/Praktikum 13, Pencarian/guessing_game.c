@@ -6,7 +6,7 @@ int data[MAX];
 
 void GuessingGame(int n)
 {
-    int i = 0, L = 0, R = n - 1, m, temp = n;
+    int i = 0, L = 0, R = n - 1, m, temp1 = n, temp2;
     char pil;
 
     while (L <= R)
@@ -19,21 +19,26 @@ void GuessingGame(int n)
 
         if (pil == 'y')
         {
-            temp = m;
+            temp1 = m;
             R = m - 1;
         }
         else
+        {
+            temp2 = m;
             L = m + 1;
+        }
     }
 
     if (pil == 't')
-        printf("\nKarena angkanya lebih kecil dari %d tapi tidak lebih kecil dari %d, maka angkanya pasti %d", temp, m, m);
+        printf("\nKarena angkanya lebih kecil dari %d tapi tidak lebih kecil dari %d, maka angkanya pasti %d\n\n", temp1, m, m);
     else
     {
         if (m - 1 == (n - 1) / 2)
-            printf("\nAngkanya berada di tengah, jadi Anda pasti memikirkan antara angka %d atau %d", m, m - 1);
+            printf("\nAngkanya berada di tengah, jadi Anda pasti memikirkan antara angka %d atau %d\n\n", m, m - 1);
+        else if (temp1 > temp2)
+            printf("\nKarena angkanya lebih kecil dari %d tapi tidak lebih kecil dari %d, maka angkanya pasti %d\nn", temp2, temp1, temp2);
         else
-            printf("\nTidak mungkin angka yang Anda pikirkan lebih kecil daripada %d!", m);
+            printf("\nTidak mungkin angka yang Anda pikirkan lebih kecil daripada %d!\n\n", m);
     }
 }
 
