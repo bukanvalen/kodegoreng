@@ -36,7 +36,7 @@ void GuessingGame(int n)
         if (m - 1 == (n - 1) / 2)
             printf("\nAngkanya berada di tengah, jadi Anda pasti memikirkan antara angka %d atau %d\n\n", m, m - 1);
         else if (temp1 > temp2)
-            printf("\nKarena angkanya lebih kecil dari %d tapi tidak lebih kecil dari %d, maka angkanya pasti %d\n\n", temp2, temp1, temp2);
+            printf("\nKarena angkanya lebih kecil dari %d tapi tidak lebih kecil dari %d, maka angkanya pasti %d\n\n", temp1, temp2, temp2);
         else
             printf("\nTidak mungkin angka yang Anda pikirkan lebih kecil daripada %d!\n\n", m);
     }
