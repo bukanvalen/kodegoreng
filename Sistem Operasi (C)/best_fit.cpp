@@ -17,9 +17,7 @@ void bestFit(int blockSize[], int m, int processSize[], int n)
         {
             if (blockSize[j] >= processSize[i])
             {
-                if (bestIdx == -1)
-                    bestIdx = j;
-                else if (blockSize[bestIdx] > blockSize[j])
+                if (bestIdx == -1 || (blockSize[bestIdx] > blockSize[j]))
                     bestIdx = j;
             }
         }
