@@ -69,6 +69,6 @@ int main()
   page_faults = pageFaults(pages, n, capacity, hits);
   cout << "\nJumlah page fault = " << page_faults << endl;
   cout << "Jumlah hits = " << hits << endl;
-  cout << "Page fault rate = " << (float)page_faults / capacity << " per frame";
+  cout << "Page fault rate = " << (float)page_faults / (hits + page_faults) << " per frame";
   return 0;
 }
