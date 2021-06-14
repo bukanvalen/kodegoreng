@@ -122,6 +122,6 @@ int main()
   printf("\n3. Postorder: ");
   postorder(ph);
   printf("\n\nInformasi Tree >>\n- Ukuran tree: %d", ukuran(ph));
-  printf("\n- Kedalaman: %d", kedalaman(ph));
+  printf("\n- Kedalaman: %d", kedalaman(ph) - 1);
   return 0;
 }
