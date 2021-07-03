@@ -35,7 +35,7 @@ void Cetak()
     {
         printf("%d", p->konstanta);
         if (p->pangkat != 1)
-            printf("^%d", p->pangkat);
+            printf("x^%d", p->pangkat);
         if (p->next != NULL)
             printf(" + ");
         p = p->next;
@@ -188,7 +188,7 @@ int main()
             printf("\nPilihan tidak valid!");
         }
         Cetak();
-        printf("Lagi ? (y/t) ");
+        printf("Lagi? (y/t) ");
         fflush(stdin);
         scanf("%c", &lagi);
     }
